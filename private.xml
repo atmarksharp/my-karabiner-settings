@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<root>
+	<devicevendordef>
+    <vendorname>FILCO</vendorname>
+    <vendorid>0x04b4</vendorid>
+  </devicevendordef>
+
+	<devicevendordef>
+    <vendorname>Apple</vendorname>
+    <vendorid>0x05ac</vendorid>
+  </devicevendordef>
+
+	<deviceproductdef>
+    <productname>apple_internal_keyboard</vendorname>
+    <productid>0x0242</vendorid>
+  </devicevendordef>
+
+	<deviceproductdef>
+    <productname>majestouch_minila</productname>
+    <productid>0x0101</productid>
+  </deviceproductdef>
+
+	<item>
+		<name>MyKeyMap</name>
+		<list>
+			<item>
+				<name>Command_L to Control_L (only VI, Terminal, Virtual Machine, RDC, X11)</name>
+				<identifier>private.command_l_to_control_l_only_viterm</identifier>
+				<only>VI, TERMINAL, VIRTUALMACHINE, CATHODE, REMOTEDESKTOPCONNECTION, X11</only>
+				<autogen>--KeyToKey-- KeyCode::COMMAND_L, KeyCode::CONTROL_L</autogen>
+			</item>
+			<item>
+				<name>Control_L to Command_L (only VI, Terminal, Virtual Machine, RDC)</name>
+				<identifier>private.control_l_to_command_l_only_viterm</identifier>
+				<only>VI, TERMINAL, VIRTUALMACHINE, CATHODE, REMOTEDESKTOPCONNECTION</only>
+				<autogen>--KeyToKey-- KeyCode::CONTROL_L, KeyCode::COMMAND_L</autogen>
+			</item>
+			<item>
+				<name>Control_L to Command_L (except VI, Terminal, Virtual Machine, RDC)</name>
+				<identifier>private.control_l_to_command_l_except_viterm</identifier>
+				<not>VI, TERMINAL, VIRTUALMACHINE, CATHODE, REMOTEDESKTOPCONNECTION</not>
+				<autogen>--KeyToKey-- KeyCode::CONTROL_L, KeyCode::COMMAND_L</autogen>
+			</item>
+			<item>
+				<name>Command_R to Control_R (only VI, Terminal, Virtual Machine, RDC, X11)</name>
+				<identifier>private.command_r_to_control_r_only_viterm</identifier>
+				<only>VI, TERMINAL, VIRTUALMACHINE, CATHODE, REMOTEDESKTOPCONNECTION, X11</only>
+				<autogen>--KeyToKey-- KeyCode::COMMAND_R, KeyCode::CONTROL_R</autogen>
+			</item>
+			<item>
+				<name>Control_R to Command_R (only VI, Terminal, Virtual Machine, RDC)</name>
+				<identifier>private.control_r_to_command_r_only_viterm</identifier>
+				<only>VI, TERMINAL, VIRTUALMACHINE, CATHODE, REMOTEDESKTOPCONNECTION</only>
+				<autogen>--KeyToKey-- KeyCode::CONTROL_R, KeyCode::COMMAND_R</autogen>
+			</item>
+			<item>
+				<name>Fn + 0 to Keypad 0</name>
+				<identifier>private.control_l_shift_l_0_to_keypad_0</identifier>
+				<only>GOOGLE_CHROME, FIREFOX, SAFARI</only>
+				<autogen>
+					__KeyToKey__
+					KeyCode::KEY_0, ModifierFlag::FN,
+					KeyCode::KEYPAD_0
+				</autogen>
+			</item>
+			<item>
+				<name>Fn + 9 to Keypad 1</name>
+				<identifier>private.control_l_shift_l_1_to_keypad_1</identifier>
+				<only>GOOGLE_CHROME, FIREFOX, SAFARI</only>
+				<autogen>
+					__KeyToKey__
+					KeyCode::KEY_9, ModifierFlag::FN,
+					KeyCode::KEYPAD_1
+				</autogen>
+			</item>
+			<item>
+				<name>Fn + N to M</name>
+				<identifier>private.fn_n_to_m</identifier>
+				<autogen>
+					__KeyToKey__
+					KeyCode::N, ModifierFlag::FN,
+					KeyCode::M
+				</autogen>
+			</item>
+			<item>
+				<name>S to A</name>
+				<identifier>private.s_to_a</identifier>
+				<autogen>
+					__KeyToKey__
+					KeyCode::S,
+					KeyCode::A
+				</autogen>
+			</item>
+			<item>
+				<name>Fn + W to S</name>
+				<identifier>private.fn_w_to_s</identifier>
+				<autogen>
+					__KeyToKey__
+					KeyCode::W, ModifierFlag::FN,
+					KeyCode::S
+				</autogen>
+			</item>
+			<item>
+				<name>Fn + S to A</name>
+				<identifier>private.fn_s_to_a</identifier>
+				<autogen>
+					__KeyToKey__
+					KeyCode::S, ModifierFlag::FN,
+					KeyCode::A
+				</autogen>
+			</item>
+			<item>
+				<name>Fn + Z to Comma</name>
+				<identifier>private.fn_z_to_comma</identifier>
+				<autogen>
+					__KeyToKey__
+					KeyCode::Z, ModifierFlag::FN,
+					KeyCode::COMMA
+				</autogen>
+			</item>
+			<item>
+				<name>Fn + X to Dot</name>
+				<identifier>private.fn_x_to_dot</identifier>
+				<autogen>
+					__KeyToKey__
+					KeyCode::X, ModifierFlag::FN,
+					KeyCode::DOT
+				</autogen>
+			</item>
+			<item>
+				<name>Fn + C to Bracket Left ( [ )</name>
+				<identifier>private.fn_c_to_blacket_left</identifier>
+				<autogen>
+					__KeyToKey__
+					KeyCode::C, ModifierFlag::FN,
+					KeyCode::BRACKET_LEFT
+				</autogen>
+			</item>
+			<item>
+				<name>Fn + V to Backquote ( ` )</name>
+				<identifier>private.fn_v_to_backquote</identifier>
+				<autogen>
+					__KeyToKey__
+					KeyCode::V, ModifierFlag::FN,
+					KeyCode::BACKQUOTE
+				</autogen>
+			</item>
+			<item>
+				<name>Fn + B to Equal ( = )</name>
+				<identifier>private.fn_b_to_equal</identifier>
+				<autogen>
+					__KeyToKey__
+					KeyCode::B, ModifierFlag::FN,
+					KeyCode::EQUAL
+				</autogen>
+			</item>
+			<item>
+				<name>Fn + Q to Plus ( + )</name>
+				<identifier>private.fn_q_to_plus</identifier>
+				<autogen>
+					__KeyToKey__
+					KeyCode::Q, ModifierFlag::FN,
+					KeyCode::EQUAL, ModifierFlag::SHIFT_L,
+				</autogen>
+			</item>
+			<item>
+				<name>Shift + KeyPad Equal ( = ) to KeyPad Plus ( + )</name>
+				<identifier>private.shift_keypad_eq_to_keypad_plus</identifier>
+				<autogen>
+					__KeyToKey__
+					KeyCode::KEYPAD_EQUAL, ModifierFlag::SHIFT_L,
+					KeyCode::KEYPAD_PLUS
+				</autogen>
+			</item>
+			<item>
+				<name>Command_R + Shift_L + UnderScore ( _ ) to Command_R + Plus ( + )</name>
+				<identifier>private.command_shift_underscore_to_command_plus</identifier>
+				<autogen>
+					__KeyToKey__
+					KeyCode::MINUS, ModifierFlag::COMMAND_R, ModifierFlag::SHIFT_L,
+					KeyCode::EQUAL, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_R
+				</autogen>
+			</item>
+			<item>
+				<name>Fn + 1 to F1</name>
+				<identifier>private.fn_1_to_f1</identifier>
+				<autogen>
+					__KeyToKey__
+					KeyCode::KEY_1, ModifierFlag::FN,
+					KeyCode::F1
+				</autogen>
+			</item>
+			<item>
+				<name>Fn + 5 to F5</name>
+				<identifier>private.fn_5_to_f5</identifier>
+				<autogen>
+					__KeyToKey__
+					KeyCode::KEY_5, ModifierFlag::FN,
+					KeyCode::F5
+				</autogen>
+			</item>
+
+			<item>
+				<name>F19(Capslock) to A if using internal keyboard</name>
+				<identifier>private.f19_to_a_apple</identifier>
+				<device_only>DeviceVendor::Apple, DeviceProduct::apple_internal_keyboard</device_only>
+				<autogen>
+					__KeyToKey__
+					KeyCode::F19,
+					KeyCode::A
+				</autogen>
+			</item>
+
+			<item>
+				<name>F19(Capslock) to Ctrl_R if using filco minila</name>
+				<identifier>private.f19_to_ctrl_r_filco_minila</identifier>
+				<device_only>DeviceVendor::FILCO, DeviceProduct::majestouch_minila</device_only>
+				<autogen>
+					__KeyToKey__
+					KeyCode::F19,
+					KeyCode::CONTROL_R
+				</autogen>
+			</item>
+
+			<item>
+				<name>F19(Capslock) to Command_R if using filco minila</name>
+				<identifier>private.f19_to_command_r_filco_minila</identifier>
+				<device_only>DeviceVendor::FILCO, DeviceProduct::majestouch_minila</device_only>
+				<autogen>
+					__KeyToKey__
+					KeyCode::F19,
+					KeyCode::COMMAND_R
+				</autogen>
+			</item>
+
+			<item>
+				<name>Ctrl_L to Command_L if using filco minila</name>
+				<identifier>private.ctrl_l_to_command_l_filco_minila</identifier>
+				<device_only>DeviceVendor::FILCO, DeviceProduct::majestouch_minila</device_only>
+				<autogen>
+					__KeyToKey__
+					KeyCode::CONTROL_L,
+					KeyCode::COMMAND_L
+				</autogen>
+			</item>
+
+			<item>
+				<name>F19(capslock) to Control_R when filco (only VI, Terminal, Virtual Machine, RDC, X11)</name>
+				<identifier>private.caps_to_control_r_only_viterm_filco</identifier>
+				<only>VI, TERMINAL, VIRTUALMACHINE, CATHODE, REMOTEDESKTOPCONNECTION, X11</only>
+				<device_only>DeviceVendor::FILCO, DeviceProduct::majestouch_minila</device_only>
+				<autogen>--KeyToKey-- KeyCode::F19, KeyCode::CONTROL_R</autogen>
+			</item>
+
+			<item>
+				<name>F19(capslock) to Command_R when filco (except VI, Terminal, Virtual Machine, RDC, X11)</name>
+				<identifier>private.caps_to_command_r_except_viterm_filco</identifier>
+				<not>VI, TERMINAL, VIRTUALMACHINE, CATHODE, REMOTEDESKTOPCONNECTION, X11</not>
+				<device_only>DeviceVendor::FILCO, DeviceProduct::majestouch_minila</device_only>
+				<autogen>--KeyToKey-- KeyCode::F19, KeyCode::COMMAND_R</autogen>
+			</item>
+
+			<vkopenurldef>
+		    <name>KeyCode::VK_OPEN_URL_SHELL_toggle_cursormove_scrollwheel</name>
+		    <url type="shell">
+	        <![CDATA[ /Applications/Karabiner.app/Contents/Library/bin/karabiner toggle private.pointing_relative_none_to_scroll ]]>
+		    </url>
+			</vkopenurldef>
+
+			<item>
+		    <name>Toggle CursorMove &lt;-> ScrollWheel by L+R click</name>
+		    <identifier>private.toggle_cursormove_scrollwheel</identifier>
+		    <autogen>
+	        __SimultaneousKeyPresses__
+	        PointingButton::RIGHT, PointingButton::LEFT,
+	        KeyCode::VK_OPEN_URL_SHELL_toggle_cursormove_scrollwheel,
+		    </autogen>
+			</item>
+
+			<item hidden="true">
+			    <name>CursorMove -> ScrollWheel</name>
+			    <identifier>private.pointing_relative_none_to_scroll</identifier>
+			    <autogen>__PointingRelativeToScroll__ PointingButton::NONE</autogen>
+			</item>
+		</list>
+	</item>
+</root>
