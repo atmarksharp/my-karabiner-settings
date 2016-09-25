@@ -260,7 +260,7 @@
 				<autogen>--KeyToKey-- KeyCode::F19, KeyCode::COMMAND_R</autogen>
 			</item>
 
-			<vkopenurldef>
+      <!-- <vkopenurldef>
 		    <name>KeyCode::VK_OPEN_URL_SHELL_toggle_cursormove_scrollwheel</name>
 		    <url type="shell">
 	        <![CDATA[ /Applications/Karabiner.app/Contents/Library/bin/karabiner toggle private.pointing_relative_none_to_scroll ]]>
@@ -281,6 +281,14 @@
 			    <name>CursorMove -> ScrollWheel</name>
 			    <identifier>private.pointing_relative_none_to_scroll</identifier>
 			    <autogen>__PointingRelativeToScroll__ PointingButton::NONE</autogen>
+      </item> -->
+
+			<item>
+				<name>Control_L to Command_L when using filco (only VI, Terminal, Virtual Machine, RDC)</name>
+				<identifier>private.control_l_to_command_l_when_filco_only_viterm</identifier>
+				<only>VI, TERMINAL, VIRTUALMACHINE, CATHODE, REMOTEDESKTOPCONNECTION</only>
+				<device_only>DeviceVendor::FILCO, DeviceProduct::majestouch_minila</device_only>
+				<autogen>--KeyToKey-- KeyCode::CONTROL_L, KeyCode::COMMAND_L</autogen>
 			</item>
 		</list>
 	</item>
